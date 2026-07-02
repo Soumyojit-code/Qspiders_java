@@ -14,7 +14,7 @@ public class Frequency {
            num/=10;
 
         }
-        for(int i=fre.length-1;i>=0;i--)
+       for(int i=0;i< fre.length;i++)
         {
             System.out.println("Count of " +i+ "is: "+fre[i]);
         }
