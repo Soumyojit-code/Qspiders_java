@@ -17,12 +17,10 @@ package Qspider_java;
         System.out.println("Name: " + name + ", Age: " + age + ", Location: " + location);
     }
 }
-public class Employe
-{
-    public static void main(String[] args)
-    {
-        Demo d1=new Demo("Sumon",65,"karimpur");
-        Demo d2=new Demo("Dip",15,"kolkata");
+public class Employe {
+    public static void main(String[] args) {
+        Demo d1 = new Demo("Sumon", 65, "karimpur");
+        Demo d2 = new Demo("Dip", 15, "kolkata");
         d1.Details();
         d2.Details();
     }
