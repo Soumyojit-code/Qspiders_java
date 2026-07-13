@@ -5,25 +5,21 @@
 // all possible sequential numbers and filter those that lie within the given range [low, high].
 
 import java.util.*;
-public class sequentialdigits
-{
-    public static void main(String[] args)
-    {
+public class sequentialdigits {
+    public static void main(String[] args) {
         int low = 1000, high = 13000;
 
-        System.out.println(SequentDigits(low,high));
+        System.out.println(SequentDigits(low, high));
     }
-   static List<Integer> SequentDigits (int low,int high)
-    {
+
+    static List<Integer> SequentDigits(int low, int high) {
         List<Integer> A = new ArrayList<>();
-        for(int i=1;i<=9;i++)
-        {
+        for (int i = 1; i <= 9; i++) {
             long num = i;
-            for(int j=i+1;j<=9;j++)
-            {
-                num = num*10+j;
-                if(num>high) break;
-                else if(num>=low) A.add((int)num);
+            for (int j = i + 1; j <= 9; j++) {
+                num = num * 10 + j;
+                if (num > high) break;
+                else if (num >= low) A.add((int) num);
             }
         }
         Collections.sort(A);
