@@ -4,7 +4,9 @@
 // there are only a limited number of such numbers (maximum 36). We can generate
 // all possible sequential numbers and filter those that lie within the given range [low, high].
 
-import java.util.*;
+import java.util.Collections;
+import java.util.ArrayList;
+import java.util.List;
 public class sequentialdigits {
     public static void main(String[] args) {
         int low = 1000, high = 13000;
